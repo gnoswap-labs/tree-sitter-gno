@@ -1,0 +1,17 @@
+{
+  "name": "tree-sitter-gno",
+  "version": "1.0.0",
+  "description": "gno grammar for tree-sitter",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Lee ByeongJun",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.19.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.22.2"
+  }
+}

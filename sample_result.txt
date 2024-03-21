@@ -1,0 +1,22 @@
+> tree-sitter parse sample.gno
+
+```plain
+(source_file [0, 0] - [8, 1]
+  (package_clause [0, 0] - [0, 12]
+    (package_identifier [0, 8] - [0, 12]))
+  (import_declaration [2, 0] - [4, 1]
+    (import_spec_list [2, 7] - [4, 1]
+      (import_spec [3, 1] - [3, 23]
+        path: (interpreted_string_literal [3, 1] - [3, 23]))))
+  (function_declaration [6, 0] - [8, 1]
+    name: (identifier [6, 5] - [6, 9])
+    parameters: (parameter_list [6, 9] - [6, 11])
+    body: (block [6, 12] - [8, 1]
+      (expression_statement [7, 1] - [7, 30]
+        (call_expression [7, 1] - [7, 30]
+          function: (selector_expression [7, 1] - [7, 13]
+            operand: (identifier [7, 1] - [7, 5])
+            field: (field_identifier [7, 6] - [7, 13]))
+          arguments: (argument_list [7, 13] - [7, 30]
+            (interpreted_string_literal [7, 14] - [7, 29])))))))
+```
